@@ -66,7 +66,9 @@ export default function Hero() {
             height={452}
             src="/images/profile.png"
             alt="Profile"
-            className="h-auto rounded-full object-cover shadow-lg border-4 border-teal-600"
+            className="h-auto max-w-[334px] rounded-full object-cover shadow-lg border-4 border-teal-600"
+            priority={true}
+            loading="eager"
           />
         </motion.div>
       </div>
