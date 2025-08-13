@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const educationData = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "MYmensingh Engineering College",
+    degree: "Bachelor of Science in Computer Science and Engineering (BSc in CSE)",
+    institution: "Mymensingh Engineering College",
     year: "2019 - 2024",
   },
   {
@@ -22,7 +22,7 @@ export default function Education() {
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
           Education
         </h2>
-        <div className="space-y-8">
+        <div className="grid md:grid-cols-2 gap-10">
           {educationData.map((edu, index) => (
             <motion.div key={index} initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: index * 0.2 }} viewport={{ once: true }} className="bg-gray-50 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-teal-600">{edu.degree}</h3>
